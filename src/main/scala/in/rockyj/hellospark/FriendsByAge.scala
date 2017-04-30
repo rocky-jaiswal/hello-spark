@@ -25,7 +25,7 @@ object FriendsByAge {
   }
 
   def calculateAverage(nums: Iterable[Int]): Double = {
-    nums.reduce((a, b) => a + b) / nums.size
+    nums.reduce((a, b) => a + b).toDouble / nums.size
   }
 
   /** Our main function where the action happens */

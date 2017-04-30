@@ -1,17 +1,18 @@
 package in.rockyj.hellospark
 
-import org.scalatest.{FunSuite, BeforeAndAfterAll}
+import org.scalatest.{FunSuite}
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 import in.rockyj.hellospark._
 
 @RunWith(classOf[JUnitRunner])
-class FriendsByAgeTest extends FunSuite with BeforeAndAfterAll {
+class FriendsByAgeTest extends FunSuite {
 
-  test("the job returns the right response") {
-//    FriendsByAge.run()
-    assert(2 + 2 == 4)
+  test("the average calculation is right") {
+    val ages = List(1, 2, 3, 4, 5, 6)
+    println(FriendsByAge.calculateAverage(ages))
+    assert(FriendsByAge.calculateAverage(ages) == 3.5)
   }
 
 }

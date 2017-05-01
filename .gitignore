@@ -2,4 +2,4 @@
 /.idea/
 /.gradle/*
 /gradle/wrapper/*
-/out/production/hello-spark/fakefriends.csv
+/out/production/hello-spark/*.csv

@@ -10,7 +10,7 @@ object FriendsByAge {
 
   def filePath = {
     val resource = this.getClass.getClassLoader.getResource("fakefriends.csv")
-    if (resource == null) sys.error("Please download the dataset as explained in the assignment instructions")
+    if (resource == null) sys.error("Data file not found!")
     new File(resource.toURI).getPath
   }
 

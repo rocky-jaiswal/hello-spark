@@ -10,7 +10,7 @@ object MinStationTemp {
 
   def filePath = {
     val resource = this.getClass.getClassLoader.getResource("1800.csv")
-    if (resource == null) sys.error("Please download the dataset as explained in the assignment instructions")
+    if (resource == null) sys.error("Data file not found!")
     new File(resource.toURI).getPath
   }
 
